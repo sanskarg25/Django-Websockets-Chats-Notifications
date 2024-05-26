@@ -28,12 +28,17 @@ Also, create a .env file in main directory as of requirements.txt and include yo
 
 
 DB_USERNAME = "postgres"
+
 DB_PASSWORD = "your_password"
+
 DB_NAME = "your_db_name"
+
 DB_HOST = "localhost"
+
 DB_PORT = "5432"
  
 SERVER_HOST = "http://localhost:8000/"
+
 UI_HOST = "http://localhost:8000/"
 
 
@@ -56,12 +61,19 @@ You can use two ways for setting up docker-image
 
 ### Windows User - 
 Download docker desktop and there you can create image as you require or else you the below command after installing docker desktop.
+
 CMD prompt [ run Docker desktop] -
+
 > docker ps
+
 > docker ps -al
+
 > docker pull redis
+
 > docker run -d --name "project_name"-redis -p 6379:6379 redis
+
 > docker ps
+
 > docker restart "project_name"-redis
 
 ### Linux User - 
