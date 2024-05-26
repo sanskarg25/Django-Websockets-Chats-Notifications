@@ -1,16 +1,16 @@
-# Vendor Management
+# Websockets Chats Notifications
 
 
 
 ## Getting started
 
-Vendor Management is a web application built using Django framework to streamline and manage vendors effectively. It has some features including Vendors CRUD, Purchase order CRUD and Historical Performance metrics for vendors.
-
+This is a tutorial for creating a chat application with notifications integrated using Django-Websockets as tach stack.
 
 ## Setup [Windows]
 
-git clone https://gitlab.com/sanskargandhi2000/vendor-management.git
-cd vendor-management
+go to the directory where you want to clone
+https://github.com/sanskarg25/Django-Websockets-Chats-Notifications.git
+cd "created dir"
 
 Then, create a virtual environment before starting the applciation server, use the command - 
 "python -m venv env" or "virtualenv env"
@@ -26,7 +26,7 @@ Also, create a .env file in main directory as of requirements.txt and include yo
 
 DB_USERNAME = "postgres"
 DB_PASSWORD = "your_password"
-DB_NAME = "vendor_management"
+DB_NAME = "your_db_name"
 DB_HOST = "localhost"
 DB_PORT = "5432"
  
@@ -43,10 +43,26 @@ This command will install all the required libraries and packages for starting u
 Now,
 python manage.py makemigrations
 
-
 python manage.py migrate
 
 Use the above commands to have models in place with mentioned database.
+
+## Creating docker image
+
+You can use two ways for setting up docker-image
+
+# Windows User - 
+Download docker desktop and there you can create image as you require or else you the below command after installing docker desktop.
+CMD prompt [ run Docker desktop] -
+> docker ps
+> docker ps -al
+> docker pull redis
+> docker run -d --name "project_name"-redis -p 6379:6379 redis
+> docker ps
+> docker restart "project_name"-redis
+
+# Linux User - 
+refer this - https://docs.docker.com/engine/install/ubuntu/
 
 ## Starting the server
 
@@ -54,12 +70,7 @@ python manage.py createsuperuser  // to have the access to django admin panel
 
 python manage.py runserver // localhost
 
-
 python manage.py runserver "ip:port" // for having it externally available
 
-
-## Postman Documentation
-
-Please find out the documentation related to created APIs for reference.
-
-url - https://documenter.getpostman.com/view/31783514/2sA3JGf4Kq
+## IMP Note
+Working with sockets using docker, redis and daphne is bit tricky so checkout the each and every logic built to understand the functionality.
