@@ -54,7 +54,7 @@ Use the above commands to have models in place with mentioned database.
 
 You can use two ways for setting up docker-image
 
-# Windows User - 
+### Windows User - 
 Download docker desktop and there you can create image as you require or else you the below command after installing docker desktop.
 CMD prompt [ run Docker desktop] -
 > docker ps
@@ -64,7 +64,7 @@ CMD prompt [ run Docker desktop] -
 > docker ps
 > docker restart "project_name"-redis
 
-# Linux User - 
+### Linux User - 
 refer this - https://docs.docker.com/engine/install/ubuntu/
 
 ## Starting the server
