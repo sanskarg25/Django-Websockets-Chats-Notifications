@@ -9,10 +9,13 @@ This is a tutorial for creating a chat application with notifications integrated
 ## Setup [Windows]
 
 go to the directory where you want to clone
-https://github.com/sanskarg25/Django-Websockets-Chats-Notifications.git
+
+cmd - git clone https://github.com/sanskarg25/Django-Websockets-Chats-Notifications.git
+
 cd "created dir"
 
 Then, create a virtual environment before starting the applciation server, use the command - 
+
 "python -m venv env" or "virtualenv env"
 
 
