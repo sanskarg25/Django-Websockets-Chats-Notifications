@@ -4,7 +4,7 @@
 
 ## Getting started
 
-This is a tutorial for creating a chat application with notifications integrated using Django-Websockets as tach stack.
+This is a tutorial for creating a chat application with notifications integrated using Django-Websockets as tech stack.
 
 ## Setup [Windows]
 
